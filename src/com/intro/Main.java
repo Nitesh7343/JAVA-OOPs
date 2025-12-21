@@ -1,4 +1,5 @@
-import java.util.*;
+package com.intro;
+
 
 class Student {
     String name;
@@ -51,11 +52,11 @@ public class Main {
 
         Student me = stu1;
 
-        System.out.println(stu1.name);
-        System.out.println(me.name);
-        me.name = "paandaa";
-        System.out.println(stu1.name);
-        System.out.println(me .name);
+//        System.out.println(stu1.name);
+//        System.out.println(me.name);
+//        me.name = "paandaa";
+//        System.out.println(stu1.name);
+//        System.out.println(me .name);
 
 
 
