@@ -1,24 +1,30 @@
 package com.inheritance;
 
 public class BoxWeight extends Box {
-    int w = -1;
+    int weight = -1;
 
     BoxWeight() {
-        this.l = l;
-        this.b = b;
-        this.h = h;
-        this.w = w;
+        super();
+        this.weight = weight;
     }
 
-    BoxWeight(Box box,int w) {
-        this.l = box.l;
-        this.b = box.b;
-        this.h = box.h;
-        this.w = w;
+    BoxWeight(Box box) {
+        super(box);
+        this.weight = weight;
     }
 
-    BoxWeight(int l, int b, int h, int w) {
+    BoxWeight(Box box,int weight) {
+        super(box);
+        this.weight = weight;
+    }
+
+    BoxWeight(int l, int b, int h, int weight) {
         super(l,b,h);
-        this.w = w;
+        this.weight = weight;
+    }
+
+    BoxWeight(int side, int weight) {
+        super(side);
+        this.weight = weight;
     }
 }
