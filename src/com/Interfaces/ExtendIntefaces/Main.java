@@ -1,6 +1,6 @@
 package com.Interfaces.ExtendIntefaces;
 
-public class Main implements A,B{
+public class Main implements B{
     @Override
     public void greet() {
         System.out.println("Good luck for your future.");
@@ -12,13 +12,13 @@ public class Main implements A,B{
     }
 
     public static void main(String[] args) {
-//        Main obj = new Main(); //work✅
-//        obj.fun();
-//        obj.greet();
+        Main obj = new Main(); //work✅
+        obj.fun();
+        obj.greet();
 
-        A obj = new Main();
-        obj.fun(); //work✅
-//        obj.greet(); //error❌
+        A obj1 = new Main();
+        obj1.fun(); //work✅
+//        obj1.greet(); //error❌
 
     }
 }
