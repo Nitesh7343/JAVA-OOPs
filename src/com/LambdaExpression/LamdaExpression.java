@@ -1,6 +1,4 @@
-package com;
-
-import java.util.ArrayList;
+package com.LambdaExpression;
 
 public class LamdaExpression {
     public static void main(String[] args) {
