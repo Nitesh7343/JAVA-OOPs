@@ -4,14 +4,22 @@ import java.util.*;
 public class ExceptionHandling {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+        int a = 5;
+        int b = 0;
 
         try {
-            divide(a,b);
+//            divide(a,b);
+
+            String name = "Nitesh";
+
+            if (name.equals("Nitesh")) {
+                throw new Exception("Name is Nitesh");
+            }
+        } catch(ArithmeticException e) {
+            System.out.println(e.getMessage());
         } catch(Exception e) {
             System.out.println(e.getMessage());
-        } finally { // always run either exception occurs or not....
+        }finally { // always run either exception occurs or not....
             System.out.println("Runs always");
         }
     }
