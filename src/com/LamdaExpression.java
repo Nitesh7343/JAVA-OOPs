@@ -27,9 +27,13 @@ public class LamdaExpression {
         };
 
         LamdaExpression myCalc = new LamdaExpression();
-        int ans = myCalc.operate(2,2,pow);
 
-        System.out.println(ans);
+        System.out.println(myCalc.operate(2,2,sum));
+        System.out.println(myCalc.operate(2,2,sub));
+        System.out.println(myCalc.operate(2,2,pro));
+        System.out.println(myCalc.operate(2,2,div));
+        System.out.println(myCalc.operate(2,2,rem));
+        System.out.println(myCalc.operate(2,2,pow));
 
     }
 
